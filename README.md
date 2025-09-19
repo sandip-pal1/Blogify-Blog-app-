@@ -71,7 +71,7 @@ npm run dev
 
 | Home Page | Blogs Page | Creators Page | Contact Detail | Dashboard |
 |-----------|-------------|-----------|-------------|-------------|
-| ![Home Page](./screenshot/1.png) | ![Blogs Page](./screenshot/2.png) | ![Creators Page](./screenshot/3.png) | ![Contact Detaill](./screenshot/4.png) | ![Dashboard](./screenshot/5.png) |
+| ![Home Page](./Screenshot/1.png) | ![Blogs Page](./Screenshot/2.png) | ![Creators Page](./Screenshot/3.png) | ![Contact Detaill](./Screenshot/4.png) | ![Dashboard](./Screenshot/5.png) |
 
 
 ---
