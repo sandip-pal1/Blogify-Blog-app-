@@ -69,17 +69,10 @@ npm run dev
 
 ## 📷 Screenshots  
 
-| Dashboard | Create Blog | Blog List | Blog Detail | Update Blog |
+| Home Page | Blogs Page | Creators Page | Contact Detail | Dashboard |
 |-----------|-------------|-----------|-------------|-------------|
-| ![Dashboard](./screenshot/1.png) | ![Create Blog](./screenshot/2.png) | ![Blog List](./screenshot/3.png) | ![Blog Detail](./screenshot/4.png) | ![Update Blog](./screenshot/5.png) |
+| ![Home Page](./screenshot/1.png) | ![Blogs Page](./screenshot/2.png) | ![Creators Page](./screenshot/3.png) | ![Contact Detaill](./screenshot/4.png) | ![Dashboard](./screenshot/5.png) |
 
----
-
-## 🚀 Future Improvements
-- 🏷️ Blog Categories & Tags  
-- 💬 Comments Section  
-- ❤️ Like & Bookmark Feature  
-- 🔍 Search and Filter Blogs  
 
 ---
 
