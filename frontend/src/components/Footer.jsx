@@ -130,7 +130,7 @@ const Footer = () => {
           <p>&copy; 2025 Blogify PVT. LTD. All rights reserved</p>
         </div>
         <div className="mt-4 md:mt-0 flex space-x-4">
-          <a href="#">
+          <a href="https://github.com/sandip-pal1/Blogify-Blog-app-">
             <FaGithub className="h-6" />
           </a>
           <a href="https://www.youtube.com/">

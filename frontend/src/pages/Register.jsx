@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import { useAuth } from "../context/AuthProvider"; 
+import { BACKEND_URL } from "../utils"
 
 function Register() {
   const [formData, setFormData] = useState({
@@ -53,7 +54,7 @@ function Register() {
     try {
       setLoading(true);
       const { data } = await axios.post(
-        "http://localhost:4001/api/users/register",
+        `${BACKEND_URL}/api/users/register`,
         userData,
         {
           headers: { "Content-Type": "multipart/form-data" },

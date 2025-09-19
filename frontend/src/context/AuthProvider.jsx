@@ -1,6 +1,7 @@
 import React, { useState, createContext, useEffect, useContext } from "react";
 import axios from "axios";
 import Cookies from "js-cookie";
+import { BACKEND_URL } from "../utils"
 
 export const AuthContext = createContext();
 
@@ -13,7 +14,7 @@ export const AuthProvider = ({ children }) => {
     const fetchProfile = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:4001/api/users/my-profile",
+          `${BACKEND_URL}/api/users/my-profile`,
           {
             withCredentials: true,
             headers: { "Content-Type": "application/json" },
@@ -29,7 +30,7 @@ export const AuthProvider = ({ children }) => {
     const fetchBlog = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:4001/api/blogs/all-blogs",
+          `${BACKEND_URL}/api/blogs/all-blogs`,
           { withCredentials: true }
         );
         console.log(data);
