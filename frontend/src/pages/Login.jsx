@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import toast from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthProvider";
+import { BACKEND_URL } from "../utils";
 
 function Login() {
   const { setIsAuthenticated, setProfile } = useAuth();
@@ -19,7 +20,7 @@ function Login() {
 
     try {
       const { data } = await axios.post(
-        "http://localhost:4001/api/users/login",
+        `${BACKEND_URL}/api/users/login`,
         { email, password, role },
         {
           withCredentials: true,
@@ -41,7 +42,7 @@ function Login() {
       setPassword("");
       setRole("");
       navigateTo("/");
-      window.location.reload();  //  Force reload 
+      window.location.reload(); //  Force reload
     } catch (error) {
       console.log(error);
       toast.error(
@@ -69,8 +70,7 @@ function Login() {
               value={role}
               onChange={(e) => setRole(e.target.value)}
               className="w-full p-2 mb-4 border rounded-md"
-              required
-            >
+              required>
               <option value="">Select Role</option>
               <option value="user">user</option>
               <option value="admin">admin</option>
@@ -105,34 +105,33 @@ function Login() {
               </Link>
             </p>
 
-        
             <button
               type="submit"
               disabled={loading}
               className={`w-full p-2 rounded-md text-white flex items-center justify-center
-                ${loading ? "bg-gray-400 cursor-not-allowed" : "bg-blue-500 hover:bg-blue-800 duration-300"}
-              `}
-            >
+                ${
+                  loading
+                    ? "bg-gray-400 cursor-not-allowed"
+                    : "bg-blue-500 hover:bg-blue-800 duration-300"
+                }
+              `}>
               {loading ? (
                 <svg
                   className="animate-spin h-5 w-5 text-white"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
-                  viewBox="0 0 24 24"
-                >
+                  viewBox="0 0 24 24">
                   <circle
                     className="opacity-25"
                     cx="12"
                     cy="12"
                     r="10"
                     stroke="currentColor"
-                    strokeWidth="4"
-                  ></circle>
+                    strokeWidth="4"></circle>
                   <path
                     className="opacity-75"
                     fill="currentColor"
-                    d="M4 12a8 8 0 018-8v8H4z"
-                  ></path>
+                    d="M4 12a8 8 0 018-8v8H4z"></path>
                 </svg>
               ) : (
                 "Login"
@@ -143,11 +142,17 @@ function Login() {
           {/* ✅ Demo Account Section */}
           <div className="mt-6 text-center bg-gray-50 p-4 rounded-md border">
             <h2 className="font-semibold mb-2 text-gray-700">Demo Account</h2>
-            <p className="text-sm text-gray-600">Email: <span className="font-mono">sandy@gmail.com</span></p>
-            <p className="text-sm text-gray-600">Role: <span className="font-mono">user</span></p>
-            <p className="text-sm text-gray-600">Password: <span className="font-mono">1234</span></p>
+            <p className="text-sm text-gray-600">
+              Email: <span className="font-mono">sandy@gmail.com</span>
+            </p>
+            <p className="text-sm text-gray-600">
+              Role: <span className="font-mono">user</span>
+            </p>
+            <p className="text-sm text-gray-600">
+              Password: <span className="font-mono">1234</span>
+            </p>
             <p className="text-xs text-gray-500 mt-2">
-              Use these credentials if you don’t want to register.  
+              Use these credentials if you don’t want to register.
             </p>
           </div>
         </div>
