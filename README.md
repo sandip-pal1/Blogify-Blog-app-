@@ -7,6 +7,9 @@
 ![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
 ![Cloudinary](https://img.shields.io/badge/Cloudinary-3448C5?style=for-the-badge&logo=cloudinary&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Web3Forms](https://img.shields.io/badge/Web3Forms-00C7B7?style=for-the-badge&logo=web3.js&logoColor=white)
+![React Hot Toast](https://img.shields.io/badge/React%20Hot%20Toast-FF4500?style=for-the-badge&logo=react&logoColor=white)
+
 
 ---
 
@@ -24,6 +27,10 @@ This project demonstrates **authentication, CRUD operations, secure APIs, and mo
 - 👨‍💻 **Admin Dashboard** for managing blogs  
 - 📱 **Responsive UI with TailwindCSS**  
 - ⚡ **Optimized REST APIs with Express.js**  
+- 📩 **Contact Form using Web3Forms**  
+- 🔔 **Instant Notifications using React Hot Toast**  
+- 🗂️ **Frontend & Backend are separated** for better scalability  
+- 🚀 **Deployed with Render (Backend) & Vercel (Frontend)**    
 
 ---
 
@@ -33,7 +40,9 @@ This project demonstrates **authentication, CRUD operations, secure APIs, and mo
 - **Database:** MongoDB (Mongoose ORM)  
 - **Authentication:** JWT (JSON Web Token)  
 - **Image Storage:** Cloudinary  
-- **Other Tools:** Axios, React Router, Toast Notifications  
+- **Form Handling:** Web3Forms  
+- **Notifications:** React Hot Toast  
+- **Other Tools:** Axios, React Router...
 
 ---
 
@@ -41,8 +50,8 @@ This project demonstrates **authentication, CRUD operations, secure APIs, and mo
 
 ### 🔹 Clone the repository
 ```bash
-git clone https://github.com/sandip-pal1/mern-blog-app.git
-cd mern-blog-app
+git clone https://github.com/sandip-pal1/Blogify-Blog-app-.git
+cd Blogify-Blog-app-
 ```
 
 ### 🔹 Backend Setup
