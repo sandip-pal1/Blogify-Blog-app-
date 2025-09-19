@@ -87,7 +87,7 @@ npm run dev
 
 ## 🌍 Live Demo
 👉 Try the App Here
-- **👉 Try the App Here**: [View Frontend Here](https://blogify-blog-app-phi.vercel.app/)  
+- **👉 **: [Try the App Here](https://blogify-blog-app-phi.vercel.app/)  
 
 ## 👨‍💻 Author
 **Sandip Pal**  
