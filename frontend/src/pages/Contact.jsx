@@ -14,7 +14,7 @@ function Contact() {
 
   const onSubmit = async (data) => {
     const userInfo = {
-      access_key: import.meta.env.VITE_WEB3FORMS_KEY,
+      access_key: "114fdf38-994e-4e3a-b3c3-5ad745de3d53",
       name: data.username,
       email: data.email,
       message: data.message,
